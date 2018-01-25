@@ -7,3 +7,6 @@ for x in os.listdir('.'):
     if x[0] != '.' and x != 'rename.py':
         xx = new_name + str(num) + os.path.splitext(x)[1]
         os.rename(x, xx)
+        num += 1
+
+print("共更改了%d个文件" % (num-1))
